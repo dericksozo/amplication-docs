@@ -210,7 +210,7 @@ const sidebars = {
           label: "Code Generation",
           items: [
             "errors/invalid-code-generation-version",
-            "errors/missing-code-generation-version",
+            "errors/missing-code-generation-version", // a link to the errors page.
           ],
         },
         {
