@@ -1,0 +1,45 @@
+syntax = "proto3";
+
+                 package order;
+service OrderService {
+ rpc create (OrderCreateInput) returns (Order) {}
+rpc findMany (findManyParams) returns (stream Order) {}
+rpc findOne (OrderWhereUniqueInput) returns (Order) {}
+rpc update (OrderUpdateInput) returns (Order) {}
+rpc delete (OrderWhereUniqueInput) returns (Order) {} 
+ }
+message OrderCreateInput {
+string createdAt = 1;
+int32 discount = 2;
+string id = 3;
+int32 quantity = 4;
+int32 totalPrice = 5;
+string updatedAt = 6;
+};
+message Order {
+string createdAt = 1;
+int32 discount = 2;
+string id = 3;
+int32 quantity = 4;
+int32 totalPrice = 5;
+string updatedAt = 6;
+};
+message OrderWhereUniqueInput {
+string createdAt = 1;
+int32 discount = 2;
+string id = 3;
+int32 quantity = 4;
+int32 totalPrice = 5;
+string updatedAt = 6;
+};
+message OrderUpdateInput {
+string createdAt = 1;
+int32 discount = 2;
+string id = 3;
+int32 quantity = 4;
+int32 totalPrice = 5;
+string updatedAt = 6;
+};
+message findManyParams {
+
+};
