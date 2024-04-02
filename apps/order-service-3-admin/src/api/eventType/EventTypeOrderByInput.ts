@@ -1,0 +1,38 @@
+import { SortOrder } from "../../util/SortOrder";
+
+export type EventTypeOrderByInput = {
+  id?: SortOrder;
+  title?: SortOrder;
+  slug?: SortOrder;
+  description?: SortOrder;
+  position?: SortOrder;
+  locations?: SortOrder;
+  length?: SortOrder;
+  hidden?: SortOrder;
+  userId?: SortOrder;
+  teamId?: SortOrder;
+  eventName?: SortOrder;
+  timeZone?: SortOrder;
+  periodType?: SortOrder;
+  periodStartDate?: SortOrder;
+  periodEndDate?: SortOrder;
+  periodDays?: SortOrder;
+  periodCountCalendarDays?: SortOrder;
+  requiresConfirmation?: SortOrder;
+  recurringEvent?: SortOrder;
+  disableGuests?: SortOrder;
+  hideCalendarNotes?: SortOrder;
+  minimumBookingNotice?: SortOrder;
+  beforeEventBuffer?: SortOrder;
+  afterEventBuffer?: SortOrder;
+  seatsPerTimeSlot?: SortOrder;
+  schedulingType?: SortOrder;
+  scheduleId?: SortOrder;
+  price?: SortOrder;
+  currency?: SortOrder;
+  slotInterval?: SortOrder;
+  metadata?: SortOrder;
+  successRedirectUrl?: SortOrder;
+  destinationCalendarId?: SortOrder;
+  hashedLinkId?: SortOrder;
+};
